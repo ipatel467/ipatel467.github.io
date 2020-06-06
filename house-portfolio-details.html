@@ -116,14 +116,14 @@
         <div class="portfolio-description">
           <h2>Housing Price Regression</h2>
           <p>Real estate has always been a hot topic, so I thought it would be interesting to see if we could predict the cost of a house based on certain features. I made a linear regression model that can predict the cost of a house. I filtered out some features using a few different methods I will talk about later.</p>
-          
+          <p><img src="assets/img/housepd.png" class="img-fluid" alt=""></p>
            <p>Before I could run any kind of model I had to clean my data. First I removed any null values and dropped any duplicates. Then I used Z-scores to filter any outliers. Then I used a correlation matrix to remove any multilinear features that were in the dataset.</p>
-           
+           <p><img src="assets/img/housef.png" class="img-fluid" alt=""></p>
           <p>I ran my regression model multiple times with a few different tweaks for each model. My first model gave me an R^2 of .44 which is okay, but there is still room for major improvement. The reason my R^2 was so low was due to the lack of features. I went back into my dataset and added more features, and soon enough my R^2 increased to .595. This means that my model captures almost 60% of the data needed to predict the cost of a house.</p>
-         
+         <p><img src="assets/img/sqft.png" class="img-fluid" alt=""></p>
          <p>I used Lasso Regression because it is a regression analysis method that performs both feature selection and regularization in order to enhance the prediction accuracy and interpretability of the statistical model it produces. My final model gave me an R-Squared of appx .60. This means that my model captures 60% of the data needed to predict the price of a house. To improve my model I would need to implement some new features so my model can have a better fit and accuracy.</p>
          
-         <p>I would like to use this dataset again, but do more feature engineering, and use some of Sci-Kit Learn's Algorithms. For those who are interested in seeing the code behind my project, there is a link in the project information box above.</p>
+         <p>I would like to use this dataset again, but do more feature engineering, and use some of Sci-Kit Learn's Algorithms. This dataset contained a huge number of outliers that I still must figure out how to handle. I will come back to this again and attempt to fix the outlier problem. For those who are interested in seeing the code behind my project, there is a link in the project information box above.</p>
         </div>
 
       </div>
